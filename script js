@@ -1,0 +1,19 @@
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    
+    // Here you can add your logic for authentication
+    // For example, you can send a request to a server
+    
+    // For demo purposes, just display a message
+    var message = document.getElementById("message");
+    if (username === "user" && password === "1234") {
+      message.textContent = "Login successful!";
+      message.style.color = "green";
+    } else {
+      message.textContent = "Invalid username or password!";
+      message.style.color = "red";
+    }
+  });
+  
